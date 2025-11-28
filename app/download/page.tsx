@@ -6,8 +6,8 @@ import { directus_url } from "../utils/config";
 
 export default function DownloadPage() {
   // PDF file ID from Directus - you can update this with your actual PDF file ID
-  const pdfFileId = process.env.NEXT_PUBLIC_PDF_FILE_ID;
-  const pdfDownloadUrl = `${directus_url}/assets/${pdfFileId}?download`;
+  //   const pdfFileId = process.env.NEXT_PUBLIC_PDF_FILE_ID;
+  const pdfDownloadUrl = "/NavyBits-Nano-Banana-Guide-2025.pdf";
 
   const handleDownload = () => {
     window.open(pdfDownloadUrl, "_blank");
