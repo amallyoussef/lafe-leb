@@ -6,9 +6,7 @@ import { directus_url } from "../utils/config";
 
 export default function DownloadPage() {
   // PDF file ID from Directus - you can update this with your actual PDF file ID
-  const pdfFileId =
-    process.env.NEXT_PUBLIC_PDF_FILE_ID ||
-    "ce20b092-b8c6-4a69-a534-d5faf6378bca";
+  const pdfFileId = process.env.NEXT_PUBLIC_PDF_FILE_ID;
   const pdfDownloadUrl = `${directus_url}/assets/${pdfFileId}?download`;
 
   const handleDownload = () => {
